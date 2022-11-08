@@ -8,7 +8,31 @@ Args:
 Return: 
   Int: answer
 */
-  return 0;
+  int i = 0;
+  int b = 0;
+  for (int a = 0; a < numbers.length; a++) {
+    if (a > k || a < n) {
+      if (n > k) {
+        if(numbers[k]%2==0){
+          i = numbers[k];
+       
+        b = b + i;
+        }
+         k++;
+      }
+    }
+  }
+  return b;
 }
 
-void main() {}
+void main() {
+  print(func([
+    1,
+    6,
+    3,
+    4,
+    4,
+    3,
+    43,
+  ], 1, 6));
+}
